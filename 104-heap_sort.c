@@ -17,8 +17,8 @@ void swap(int *array, size_t size, int *A, int *B)
 		*A = *A + *B;
 		*B = *A - *B;
 		*A = *A - *B;
-		print_array(array, size);
 	}
+	print_array(array, size);
 }
 
 /**
