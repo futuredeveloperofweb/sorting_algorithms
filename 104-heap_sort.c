@@ -76,7 +76,7 @@ void heap_sort(int *array, size_t size)
 {
 	size_t end;
 
-	if (!array || !size)
+	if (!array || size < 2)
 		return;
 	heap(array, size);
 	end = size - 1;
