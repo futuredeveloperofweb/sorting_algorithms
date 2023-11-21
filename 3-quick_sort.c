@@ -10,13 +10,11 @@
  */
 void swap(int *array, size_t size, int *A, int *B)
 {
-	int tmp;
-
 	if (*A != *B)
 	{
-		tmp = *B;
-		*A = *B;
-		*B = tmp;
+		*A = *A + *B;
+		*B = *A - *B;
+		*A = *A - *B;
 		print_array((const int *)array, size);
 	}
 }
